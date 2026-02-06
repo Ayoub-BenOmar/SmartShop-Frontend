@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# SmartShop - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-## Available Scripts
+<div align="center">
+  <img src="public/logo192.png" alt="SmartShop Logo" width="120" />
+  <br />
+  <h3>Modern E-Commerce Management Dashboard</h3>
+</div>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📋 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Overview](#-overview)
+- [Features](#-features)
+- [Architecture](#-architecture)
+- [Getting Started](#-getting-started)
+- [Scripts](#-scripts)
+- [Technologies](#-technologies)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📖 Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**SmartShop** is a robust and modern frontend application designed for managing e-commerce operations. It provides a seamless interface for administrators to manage products, clients, and orders with efficiency and style. Built with the latest React ecosystem technologies, it ensures high performance and a great user experience.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **🔐 Authentication & Security**: Secure login system with protected routes and persistent session management.
+- **📦 Product Management**:
+  - Browse product catalog with grid views.
+  - Add, Edit, and Delete products seamlessly.
+- **👥 Client Management**:
+  - Comprehensive list of registered clients.
+  - Detailed client profiles with usage statistics.
+  - Administrator tools for managing client accounts.
+- **📊 Admin Dashboard**: Centralized hub for monitoring key metrics and activities.
+- **🛒 Order Management**: Track and process customer orders efficiently.
+- **📱 Responsive Design**: Fully optimized for desktops, tablets, and mobile devices.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🏗 Architecture
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The project follows a feature-based folder structure for scalability and maintainability.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── api/                # API services (axios config, endpoints)
+├── components/         # Reusable UI components
+│   ├── common/         # Buttons, Inputs, Modals
+│   └── layout/         # Layout wrappers (Sidebar, Navbar)
+├── features/           # Feature-specific logic & views
+│   ├── admin/          # Dashboard views
+│   ├── auth/           # Login & Auth logic
+│   ├── clients/        # Client management components
+│   ├── orders/         # Order tracking views
+│   └── products/       # Product catalog & forms
+├── store/              # Redux store & slices
+└── routes/             # Route configurations & guards
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Getting Started
 
-## Learn More
+Follow these instructions to set up the project locally.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Node.js**: v16.0.0 or higher
+- **npm** or **yarn**
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Ayoub-BenOmar/SmartShop-Frontend.git
+   cd SmartShop-Frontend
+   ```
 
-### Analyzing the Bundle Size
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+   The app will open at `http://localhost:3000`.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📜 Scripts
 
-### Advanced Configuration
+| Command | Description |
+| :--- | :--- |
+| `npm start` | Runs the app in development mode. |
+| `npm test` | Launches the test runner in interactive watch mode. |
+| `npm run build` | Builds the app for production to the `build` folder. |
+| `npm run eject` | Ejects the configuration (use with caution). |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 💻 Technologies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Frontend Framework**: [React 19](https://reactjs.org/)
+- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
+- **Routing**: [React Router DOM v7](https://reactrouter.com/)
+- **HTTP Client**: [Axios](https://axios-http.com/)
+- **Styling**: CSS integration
+- **Building Tool**: React Scripts
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  Developed with ❤️ by <a href="https://github.com/Ayoub-BenOmar">Ayoub BenOmar</a>
+</div>
